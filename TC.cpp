@@ -10,7 +10,7 @@ int main() {
     int c[C_size]{2, 6, 10, 14, 18, 22, 26, 30, 34};
     int d[D_size]{3, 7, 11, 15, 19, 23, 27, 31, 35};
     double M=3.14/180;
-    
+
     using namespace std;
     setlocale(LC_ALL, "RU");
 
@@ -31,7 +31,8 @@ int main() {
                 if (a[i] == ost || alpha == 0) {
                     right = 1;
                     break;
-                } else {
+                }
+                else {
                     for (int i = 0; i < C_size; i++) {
                         if (c[i] == ost) {
                             left = 1;
@@ -47,7 +48,8 @@ int main() {
                 if (b[i] == ost || alpha == 90) {
                     up = 1;
                     break;
-                } else {
+                }
+                else {
                     for (int i = 0; i < D_size; i++) {
                         if (d[i] == ost) {
                             down = 1;
@@ -55,9 +57,7 @@ int main() {
                         }
                     }
                 }
-
             }
-
         }
     }
 
