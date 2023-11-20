@@ -9,7 +9,7 @@ int main() {
     int b[B_size]{1, 5, 9, 13, 17, 21, 25, 29, 33};
     int c[C_size]{2, 6, 10, 14, 18, 22, 26, 30, 34};
     int d[D_size]{3, 7, 11, 15, 19, 23, 27, 31, 35};
-    double M=3.14/180;
+    double M=M_PI/180;
 
     using namespace std;
     setlocale(LC_ALL, "RU");
