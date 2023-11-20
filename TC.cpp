@@ -13,13 +13,15 @@ int main() {
     int b[B_size]{1, 5, 9, 13, 17, 21, 25, 29, 33};
     int c[C_size]{2, 6, 10, 14, 18, 22, 26, 30, 34};
     int d[D_size]{3, 7, 11, 15, 19, 23, 27, 31, 35};
+    double M=3.14/180;
     cout << "Введите угол:  ";
     cin >> alpha;
-    alpha_rad = (alpha / 180) * PI;
+    alpha_rad = alpha * M;
+
     sin_alpha = sin(alpha_rad);
     cos_alpha = cos(alpha_rad);
     tan_alpha = tan(alpha_rad);
-    cot_alpha = (cos(alpha_rad) / sin(alpha_rad));
+    cot_alpha = 1 / tan(alpha_rad);
 
     if (alpha % 90 == 0) {
         ost = alpha / 90;
@@ -68,6 +70,7 @@ int main() {
 
 
     }
+
     if (n1801) {
         cout << "Синус угла: " << 0 << endl;
     }
@@ -117,7 +120,7 @@ int main() {
         cout << "Котангенс угла: котангенс не определен" << endl;
     }
     else {
-        cout << "Котангенс угла: " << tan_alpha << endl;
+        cout << "Котангенс угла: " << cot_alpha << endl;
     }
 
     cout << "Угол в радианах: " << alpha_rad;
