@@ -66,11 +66,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TC.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TC" TARGET_NAME="TC.cpp" CONFIG_NAME="TC.cpp">
       <option name="sourceFile" value="TC.cpp" />
       <method v="2">
@@ -91,6 +86,7 @@
       <workItem from="1700425780750" duration="1000" />
       <workItem from="1700426080475" duration="2456000" />
       <workItem from="1700476393134" duration="9790000" />
+      <workItem from="1700852865271" duration="5352000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
