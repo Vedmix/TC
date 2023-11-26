@@ -21,6 +21,7 @@
     <list default="true" id="0b59e839-da1e-4381-bfc7-7364f9e807a7" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TC.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <workItem from="1700426080475" duration="2456000" />
       <workItem from="1700476393134" duration="9790000" />
       <workItem from="1700852865271" duration="5352000" />
-      <workItem from="1701010327758" duration="4547000" />
+      <workItem from="1701010327758" duration="6169000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

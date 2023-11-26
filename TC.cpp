@@ -17,17 +17,17 @@ int main() {
     using namespace std;
     setlocale(LC_ALL, "RU");
 
-    cout << "Введите тип ввода(градусы(1)/пи-радианы(2)): ";
+    cout << "Введите тип ввода(градусы(1) / пи-радианы(2) / радианы(3)): ";
     cin >> type_input;
     switch (type_input) {
-        case 1 :
+        case 1 :{
             cout << "Введите угол: ";
             cin >> alpha;
             alpha_rad = alpha * M;
             break;
-
-        case 2:
-            cout << "Введите угол в виде дроби: ";
+        }
+        case 2 :{
+            cout << "Введите угол: ";
             char d='/';
             string s;
             cin >> s ;
@@ -70,7 +70,6 @@ int main() {
                 alpha_rad = ((num_int*(-1)) * M_PI)/den_int;
                 alpha = alpha_rad/M;
             }
-
             else if (z != '-'){
                 if (num1==""){num1="1";}
                 int num_int = atoi(num1.c_str());
@@ -79,7 +78,17 @@ int main() {
                 alpha = alpha_rad/M;
             }
             break;
+        }
+
+
+        case 3 :{
+            cout << "Введите угол: ";
+            cin >> alpha_rad;
+            alpha = alpha_rad/M;
+            break;
+        }
     }
+
     sin_alpha = sin(alpha_rad);
     cos_alpha = cos(alpha_rad);
     tan_alpha = tan(alpha_rad);
@@ -120,7 +129,7 @@ int main() {
             }
         }
     }
-    if (type_input == 2){
+    if (type_input == 2 || type_input == 3 ){
         cout << "Угол в градусах: " << alpha << endl;
     }
     if (n1801) { cout << "Синус угла: " << 0 << endl; }
