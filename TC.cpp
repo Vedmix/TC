@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <iomanip>
+
 int main() {
     float alpha_rad, sin_alpha, cos_alpha, tan_alpha, cot_alpha;
     int alpha, ost,type_input;
@@ -57,12 +59,14 @@ int main() {
 
                 int num_int = atoi(num1.c_str());
                 if (z == '-'){
-                    alpha = (num_int*(-1)) * 180;
+                    alpha_rad = (num_int*(-1)) * M_PI;
+
                 }
                 else{
-                    alpha = num_int * 180;
+                    alpha_rad = (num_int*(1)) * M_PI;
+
                 }
-                alpha_rad = alpha * M;
+                alpha=alpha_rad/M;
             }
             else if (z == '-'){
                 s.erase(0,1);
@@ -76,8 +80,8 @@ int main() {
 
                 int num_int = atoi(num1.c_str());
                 int den_int = atoi(den.c_str());
-                alpha = ((num_int*(-1)) * 180)/den_int;
-                alpha_rad = alpha * M;
+                alpha_rad = ((num_int*(-1)) * M_PI)/den_int;
+                alpha = alpha_rad/M;
             }
 
             else if (z != '-'){
@@ -86,8 +90,8 @@ int main() {
                 }
                 int num_int = atoi(num1.c_str());
                 int den_int = atoi(den.c_str());
-                alpha = (num_int * 180)/den_int;
-                alpha_rad = alpha * M;
+                alpha_rad = (num_int * M_PI)/den_int;
+                alpha = alpha_rad/M;
             }
             break;
     }
@@ -159,4 +163,5 @@ int main() {
     cout << "Угол в радианах: " << alpha_rad;
 
     return 0;
+
 }
