@@ -49,34 +49,21 @@ int main() {
                 return 0;
             }
             if(index_d == -1) {
-                if (z == '-'){
-                    s.erase(0,1);
-                }
+                if (z == '-'){s.erase(0,1);}
 
-                if (num1 == "") {
-                    num1 = "1";
-                }
+                if (num1 == "") {num1 = "1";}
 
                 int num_int = atoi(num1.c_str());
-                if (z == '-'){
-                    alpha_rad = (num_int*(-1)) * M_PI;
-
-                }
-                else{
-                    alpha_rad = (num_int*(1)) * M_PI;
-
-                }
+                if (z == '-'){alpha_rad = (num_int*(-1)) * M_PI;}
+                else{alpha_rad = (num_int*(1)) * M_PI;}
                 alpha=alpha_rad/M;
             }
             else if (z == '-'){
                 s.erase(0,1);
-
                 int index_pi = s.find("pi");
                 string num1 = num.substr(0, index_pi);
 
-                if (num1==""){
-                    num1="1";
-                }
+                if (num1==""){num1="1";}
 
                 int num_int = atoi(num1.c_str());
                 int den_int = atoi(den.c_str());
@@ -85,9 +72,7 @@ int main() {
             }
 
             else if (z != '-'){
-                if (num1==""){
-                    num1="1";
-                }
+                if (num1==""){num1="1";}
                 int num_int = atoi(num1.c_str());
                 int den_int = atoi(den.c_str());
                 alpha_rad = (num_int * M_PI)/den_int;
